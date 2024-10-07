@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemosynth Explorers</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        header {
+            position: relative;
+            text-align: center;
+            background: linear-gradient(to right, #ffcc80, #ffab40);
+            padding: 50px 0;
+        }
+        header h1 {
+            font-size: 3em;
+            margin: 0;
+            color: #fff;
+        }
+        .moving-sun {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: moveSun 10s linear infinite;
+            z-index: 1;
+        }
+        @keyframes moveSun {
+            0% { transform: translate(-50%, -20px); }
+            50% { transform: translate(-50%, 20px); }
+            100% { transform: translate(-50%, -20px); }
+        }
+        .team-info, .project-info, .query-column {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .image-container img {
+            max-width: 30%;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        h2 {
+            color: #ff5722;
+        }
+        .query-column {
+            text-align: center;
+        }
+        input[type="text"], textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #ff5722;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #e64a19;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img class="moving-sun" src="https://example.com/moving-sun.png" alt="Moving Sun" />
+        <h1>Chemosynthetic Energy Solutions</h1>
+    </header>
+
+    <div class="team-info">
+        <h2>Team Name: CHEMOSYNTH EXPLORERS</h2>
+        <p><strong>Team Owner:</strong> ABDUL REHMAN</p>
+        <p><strong>Contact Number:</strong> 00923436967858</p>
+        <p><strong>Email:</strong> drabdul96@gmail.com</p>
+        <h3>Other Team Member:</h3>
+        <p><strong>Name:</strong> Ali Abdullah</p>
+        <p><strong>Contact Number:</strong> 00923010508140</p>
+    </div>
+
+    <div class="image-container">
+        <img src="IMAGE_LINK_1" alt="Project Image 1">
+        <img src="IMAGE_LINK_2" alt="Project Image 2">
+        <img src="IMAGE_LINK_3" alt="Project Image 3">
+    </div>
+
+    <div class="project-info">
+        <h2>Project Details</h2>
+        <p>Yes, I utilized OpenAI's GPT-4 to enhance my project on creative energy solutions. Here’s how AI contributed:</p>
+        <ul>
+            <li>Idea Generation: The AI helped brainstorm innovative methods for energy generation, including concepts like chemosynthesis and energy conversion from unconventional sources.</li>
+            <li>Research Support: It provided valuable insights into various energy sources and processes, aiding my understanding of how life can thrive in extreme conditions.</li>
+            <li>Concept Exploration: AI assisted in exploring and outlining seven distinct ways to creatively prepare energy, encouraging a broader perspective on sustainability.</li>
+            <li>Documentation: I used AI to draft and refine sections of my project, ensuring clear communication of complex ideas related to energy systems.</li>
+            <li>Visual Enhancements: AI-generated imagery illustrated the proposed energy systems, making the concepts more accessible and engaging for presentation.</li>
+            <li>Feedback and Revision: The AI provided suggestions for improving the content flow and structure, helping to ensure a cohesive narrative throughout the project.</li>
+            <li>Future Applications: AI facilitated discussions about potential applications of these energy solutions in real-world scenarios, highlighting their significance for future exploration and sustainability.</li>
+        </ul>
+    </div>
+
+    <div class="query-column">
+        <h2>Have a Question?</h2>
+        <form action="mailto:drabdul96@gmail.com" method="post" enctype="text/plain">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="text" name="email" placeholder="Your Email" required>
+            <textarea name="question" rows="4" placeholder="Type your question here..." required></textarea>
+            <input type="submit" value="Send Question">
+        </form>
+    </div>
+
+</body>
+</html>
